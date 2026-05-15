@@ -1,0 +1,22 @@
+# Task agent runtime artifacts
+tasks/inbox/*
+tasks/outbox/*
+tasks/archive/*
+!tasks/inbox/.gitkeep
+!tasks/outbox/.gitkeep
+!tasks/archive/.gitkeep
+
+# Local secrets / overrides
+.env.local
+*.env.local
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
