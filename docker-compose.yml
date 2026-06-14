@@ -63,6 +63,7 @@ services:
       POLL_INTERVAL_SECONDS: ${POLL_INTERVAL_SECONDS:-3}
       REQUEST_TIMEOUT_SECONDS: ${REQUEST_TIMEOUT_SECONDS:-180}
       MAX_AGENT_LOOPS: ${MAX_AGENT_LOOPS:-10}
+      OLLAMA_KEEP_ALIVE: "24h"
     volumes:
       - ./tasks:/app/tasks
     restart: unless-stopped
